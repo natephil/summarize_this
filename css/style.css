@@ -107,20 +107,3 @@ form {
 	text-align:center;
 	display: inline-block;
 }
-footer {
-  position: sticky;
-  position: -webkit-sticky;
-  bottom: 0;
-  z-index: -1;
-  height: 50px;
-  background-color: dodgerblue;
-  color: white;
-  text-shadow: 2px 2px black;
-  padding: 5px 0;
-  text-align: center;
-}
-@media (max-width: 420px) {
-  footer {
-    font-size: 9pt;
-  }
-}
