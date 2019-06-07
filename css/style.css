@@ -119,3 +119,8 @@ footer {
   padding: 5px 0;
   text-align: center;
 }
+@media (max-width: 420px) {
+  footer {
+    font-size: 9pt;
+  }
+}
