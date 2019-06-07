@@ -1,0 +1,88 @@
+h1 {
+	color: #373D3F; /*Raven*/
+	text-align : center;
+	font-family: "Arial";
+}
+h2 {
+	color: #373D3F; /*Raven*/
+	text-align : center;
+	font-family: "Arial";
+}
+.button {
+  border-radius: 8px;
+  background-color: #557A95;  	
+  border: none;
+  color: white; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Arial";
+  cursor: pointer;
+
+  position: relative;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+/*Add click flash effect*/
+.button:after {
+  content: "";
+  background-color: #b4e9ea;  	
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 200%;
+  margin-left: -35px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 1s
+}
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/*Add hover effect*/
+.button span:after {
+  content: '\00bb'; /*right pointing arrows*/
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px; /*expand the button*/
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.input {
+	width: 50%;
+	padding: 12px 20px;
+  	margin: 8px 0;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+body {
+	background-color: ghostwhite;
+}
+
+form {
+    margin: 0 auto;
+}
