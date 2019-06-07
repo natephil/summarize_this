@@ -1,0 +1,29 @@
+<HTML>
+ <head> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+   <h1>Input a URL with the format</h1><h2>http://www.example.com</h2>
+   <form align="center">
+     <input type="text" class="input" id="theurl" />
+     <button type="button" class = "button" onclick="runCode()"><span>Get Summary</span></button>
+   </form>
+   <h4 id="result"></h4>
+   <script>
+     function runCode() {
+       var apigw = "https://9fx8watna0.execute-api.us-west-1.amazonaws.com/default/text_summary"
+       var url = document.getElementById("theurl").value;
+       var payload = JSON.stringify({"url" : url});
+       var xhttp = new XMLHttpRequest();
+       xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+           document.getElementById("result").innerHTML = this.responseText;
+         }
+       };
+       xhttp.open("POST", apigw);
+       xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+       xhttp.send(payload);
+     }
+   </script>
+ </body>
+</HTML>
