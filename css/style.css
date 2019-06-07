@@ -94,6 +94,9 @@ form {
 	text-decoration: none;
 	margin: 5px 2px;
 	border-radius: 50%;
+	text-align:center;
+/* 	display:block; */
+	
 }
 .fa:hover {
 	opacity: 0.5;
