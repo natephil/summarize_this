@@ -107,7 +107,7 @@ form {
 	text-align:center;
 	display: inline-block;
 }
-footer {
+test_footer {
   position: sticky;
   position: -webkit-sticky;
   bottom: 0;
