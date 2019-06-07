@@ -104,4 +104,6 @@ form {
 }
 .fa-home {
 	color: #211f1f;
+	text-align:center;
+	display: inline-block;
 }
